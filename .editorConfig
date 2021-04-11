@@ -1,0 +1,25 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = false
+indent_style = space
+charset = utf-8
+trim_trailing_whitespace = true
+
+[*.{md,json}]
+indent_style = space
+indent_size = 2
+
+[*.{css,scss,js,vue,html}]
+indent_style = space
+indent_size = 2
+
+[*.{py}]
+indent_style = space
+indent_size = 4
+
+# Minified JavaScript and CSS files shouldn't be changed
+[**.min.{js.css}]
+indent_style = ignore
+insert_final_newline = ignore
